@@ -13,7 +13,7 @@ services:
     #image: node:18
     #build:
       #context: ./api/
-      ##dockerfile: ./api/Dockerfile
+      #dockerfile: ./api/Dockerfile
     #volumes:
       #- ./api:/server
     ##networks:
@@ -37,12 +37,6 @@ services:
     volumes:
       - ./db:/data
     working_dir: /data
-    #command:
-      #- docker cp ./db/business.csv /data
-    #command:
-      #- postgres -c "CREATE DATABASE my_db;"
-      #- postgres -c "CREATE TABLE IF NOT EXISTS business (name VARCHAR(80), state VARCHAR (2), city VARCHAR (50)); COPY business (name, state, city) FROM '/data/business.csv' DELIMITER ',' CSV;"
-
 
 #networks:
   #backend:
