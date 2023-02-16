@@ -6,13 +6,13 @@ services:
     #image: node:latest
     #repository: 
     #ports:
-      #- "3000:3000"
+      #- "5173:5173"
 
   #api:
     #container_name: "test_server"
     #image: node:latest
     #ports:
-      #- "4321:4321"
+      #- "8080:8080"
 
   db:
     container_name: "test_db"
