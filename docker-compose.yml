@@ -18,9 +18,9 @@ services:
       #- ./api:/server
     ##networks:
       ##- backend
-    #working_dir: /server
     #ports:
       #- "8080:8080"
+    #working_dir: /server
     #command: "npm run dev"
 
   db:
@@ -43,8 +43,8 @@ services:
     #driver: bridge
 
 volumes:
-  #api:
-    #driver: local
+  api:
+    name: "api"
   db:
     #driver: local
     name: "db"
